@@ -125,8 +125,8 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(arr, index){
-  return `${arr[index].name} gave the restaurant a ${arr[index].rating} star review, and their feedback was: ${arr.[index].feedback}`
+function getReviewByIndex(arr, indexNum){
+  return `${arr[indexNum].name} gave the restaurant a ${arr[indexNum].rating} star review, and their feedback was: ${arr.[indexNum].feedback}`;
 }
 
 
@@ -146,8 +146,6 @@ function getLastReview(arr) {
   return `${arr[arr.length - 1].name} gave the restaurant a ${arr[arr.length -1].rating} star review, and their feedback was: ${arr[arr.length - 1].feedback}`
 } 
 
-// array[array.length - 1] !!!!!!
-
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
 /** 💪💪💪💪💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪💪💪💪💪 
@@ -164,9 +162,15 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+ function getReviewByRating(arr, num) {
+    let arr2 = [];
+    for(let i = 0; i < arr.length; i++){
+      if(num === arr[i].rating){
+        arr2.push(arr.reviews);
+    } 
   }
+  return arr2;
+}
 
   
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪💪   
