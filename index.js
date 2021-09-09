@@ -1,5 +1,7 @@
 /*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
+const { arrayExpression } = require("@babel/types");
+
 /*When doing these tasks, we recommend using console.log to test the output of your code to make sure it works correctly.*/
 
 ///////////////Menu Items (MVP)///////////////////
@@ -33,6 +35,11 @@ Test your createMenuItems function by doing the following:
 
 
 
+console.log(createMenuItem('Omelette', 8, 'Breakfast'));
+console.log(createMenuItem('Pizza', 5, 'Lunch'));
+console.log(createMenuItem('Steak', 20, 'Dinner'));
+
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
 burger object below that automatically calculates price depending on the a string received as a parameter. 
@@ -47,7 +54,7 @@ Using the burger object below do the following:
 */
 const burger = {
   name: "Burger", 
-  price: 18, 
+  price: 18, //not reassigning this value aka this.price
   category: "Lunch", 
   
 }
@@ -110,7 +117,7 @@ Use the getReviewByIndex function below to do the following:
 
 
 function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+  // /*Your code here*/     array[index].name gave a rating !!!!!
 }
 
 
@@ -132,7 +139,7 @@ function getLastReview(/*Your code here*/) {
   /*Your code here*/
 } 
 
-
+// array[array.length - 1] !!!!!!
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
